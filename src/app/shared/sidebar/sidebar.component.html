@@ -1,0 +1,22 @@
+  <div class="border-right p-3" id="sidebar">
+    <div class="text-center">
+        <img src="https://media0.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif?cid=6d33bb2dwr7o5sil8hyb5q2nxgb5adi0f4jhqaqechqqdi4p&rid=giphy.gif&ct=g" class="img-fluid mb-2 rounded" alt="...">
+        <h3 class="text-light ms-2 mt-3">
+          GIF-APP
+        </h3>
+        <h6 class="text-light">
+          By: Gian Grassals
+        </h6>
+    </div>
+
+    <hr class="text-white">
+    <h6 class="text-light">
+      Last Searchs
+    </h6>
+    <ol class="list-group list-group-numbered">
+      <li *ngFor="let history of historySearch"  class="list-group-item list-group-item-action" href="#" (click)="searchHistory( history )" >
+        {{ history | titlecase }}
+      </li>
+    </ol>
+  </div>
+
